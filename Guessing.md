@@ -4,7 +4,7 @@
 flowchart TD
  Start([Start]) --> Generate[Generate Random Number]
  Generate --> Ask["What is the Random Number?"]
- Ask --> Validate {Is Input Valid?}
+ Ask --> Validate [Is Input Valid?]
  Validate --> |No| Invalid[Display Error Messsage]
  Invalid --> Ask 
  Check --> |Too High| High[Display "Too High!"]
